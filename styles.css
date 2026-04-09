@@ -16,6 +16,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100vh;
   font-family: Georgia, "Times New Roman", serif;
@@ -23,6 +25,10 @@ body {
   background:
     radial-gradient(circle at top left, rgba(217, 200, 163, 0.45), transparent 32%),
     linear-gradient(180deg, #f6f1e7 0%, #efe7d8 100%);
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 a {
@@ -48,6 +54,19 @@ a {
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.site-footer {
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
 }
 
 .eyebrow,
@@ -97,6 +116,171 @@ a {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 2rem 0 4rem;
+}
+
+.updates-dashboard,
+.article-shell {
+  margin-bottom: 2.5rem;
+}
+
+.article-shell {
+  scroll-margin-top: 6rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(46, 74, 62, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.9);
+  box-shadow: 0 10px 24px rgba(42, 50, 38, 0.08);
+  font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  background: #fffaf2;
+  transform: translateY(-1px);
+}
+
+.back-link-icon {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: 0 0 auto;
+}
+
+.dashboard-heading {
+  margin-bottom: 2.9rem;
+}
+
+.dashboard-heading h1 {
+  margin: 0.35rem 0 0.85rem;
+  font-size: clamp(2.1rem, 4.2vw, 3.8rem);
+  line-height: 1.02;
+}
+
+.featured-update,
+.archive-placeholder {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+}
+
+.featured-update {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: 0;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.featured-update:hover,
+.featured-update:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px rgba(42, 50, 38, 0.18);
+}
+
+.featured-update-copy {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-update h2,
+.archive-heading h2 {
+  margin: 0.35rem 0 0.85rem;
+  line-height: 1.05;
+}
+
+.featured-update h2 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+}
+
+.featured-update-copy p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.featured-update-link {
+  margin-top: 1rem;
+  font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--accent-deep);
+}
+
+.featured-update-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.updates-archive {
+  margin-top: 1.5rem;
+}
+
+.archive-heading {
+  margin-bottom: 1rem;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.archive-placeholder {
+  padding: 1.6rem;
+}
+
+.archive-placeholder h3 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--accent-deep);
+}
+
+.archive-placeholder p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.article-hero {
+  margin-bottom: 1.75rem;
+}
+
+.article-hero > * {
+  min-height: 100%;
+}
+
+.article-hero-media {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.article-hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
 }
 
 .hero {
@@ -304,17 +488,23 @@ a {
 }
 
 @media (max-width: 900px) {
+  .featured-update,
   .hero,
   .content-grid,
   .split-heading,
   .feature-columns,
   .two-column-lists,
-  .side-by-side-group {
+  .side-by-side-group,
+  .archive-grid {
     grid-template-columns: 1fr;
   }
 
   .span-two {
     grid-column: span 1;
+  }
+
+  .featured-update-image {
+    min-height: 260px;
   }
 
   .image-tall {
