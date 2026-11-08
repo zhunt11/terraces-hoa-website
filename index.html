@@ -1,49 +1,333 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community Updates | Terraces at Mount Olympus</title>
-    <meta
-      name="description"
-      content="Community updates and landscaping news for Terraces at Mount Olympus, with the latest post featured first and earlier updates archived below."
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand">
-        <p class="eyebrow">Homeowners Association</p>
-        <a href="index.html" class="brand-name">Terraces at Mount Olympus</a>
-      </div>
-    </header>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terraces at Mt. Olympus — 2027 Budget</title>
+<link rel="icon" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <main class="newsletter-shell">
-      <section class="updates-dashboard">
-        <div class="dashboard-heading">
-          <h1>Community Updates</h1>
+<!-- ===== TOC rail (Notion-style outline) ===== -->
+<nav class="toc-rail" id="tocRail" aria-label="Section navigation">
+  <div class="toc-track" id="tocTrack"></div>
+  <div class="toc-panel" id="tocPanel"></div>
+</nav>
+
+<div class="page">
+
+  <!-- 1. Cover -->
+  <section class="cover" id="cover" data-toc="Cover">
+    <img class="cover-logo" src="assets/logo.png" alt="Terraces at Mt. Olympus logo" />
+    <h1>2027 Budget</h1>
+    <p class="sub">Terraces at Mt. Olympus Homeowners Association</p>
+    <p class="meta">Board of Directors · Annual Budget Presentation</p>
+  </section>
+
+  <!-- 2. Approach -->
+  <section id="approach" data-toc="Our Approach">
+    <div class="section-inner">
+      <div class="eyebrow">Board Approach</div>
+      <h2>Frugal. Line by line.</h2>
+      <p class="lede">Every line reviewed. Costs trimmed where possible. Reserves protected.</p>
+      <ul class="phrase-list">
+        <li>Line-item review
+          <span class="sub">Every category examined by the Board</span>
+        </li>
+        <li>Trimmed spending
+          <span class="sub">Cuts ranging from hundreds to thousands per line</span>
+        </li>
+        <li>Reserves first
+          <span class="sub">Operate lean, save aggressively for capital projects</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. Headline number -->
+  <section id="headline" data-toc="2027 Budget">
+    <div class="section-inner">
+      <div class="eyebrow">2027 Total Budget</div>
+      <h2>$355,619</h2>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num">$335,076</div>
+          <div class="label">2026 Budget</div>
         </div>
+        <div class="stat">
+          <div class="num accent">+6.1%</div>
+          <div class="label">Year-over-year change</div>
+        </div>
+        <div class="stat">
+          <div class="num accent">+$20,543</div>
+          <div class="label">Total dollar increase</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <a class="featured-update" href="landscape-update.html">
-          <div class="featured-update-copy">
-            <p class="section-tag">Thursday, April 9</p>
-            <h2>Landscape Update</h2>
-            <p>
-              Spring cleanup, watering priorities, tree planning, committee
-              work, and seasonal landscaping expectations for the community.
-            </p>
+  <!-- 4. Reserve transfer -->
+  <section id="reserves" data-toc="Reserve Transfer">
+    <div class="section-inner">
+      <div class="eyebrow">Reserve Contribution</div>
+      <h2>Returning to full funding</h2>
+      <p class="lede">In 2026 we intentionally reduced the Reserve transfer to cover an Operating shortfall. We're restoring it in 2027.</p>
+      <div class="compare">
+        <div class="compare-card">
+          <div class="tag">2025 Level</div>
+          <div class="num">$107k</div>
+        </div>
+        <div class="compare-arrow">→</div>
+        <div class="compare-card">
+          <div class="tag">2026 (reduced)</div>
+          <div class="num">$63,945</div>
+        </div>
+        <div class="compare-arrow">→</div>
+        <div class="compare-card" style="border-color: var(--accent); background: #fdf1ea;">
+          <div class="tag" style="color: var(--accent-dark);">2027</div>
+          <div class="num" style="color: var(--accent-dark);">$107,000</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. The math -->
+  <section class="dark" id="math" data-toc="The Math">
+    <div class="section-inner">
+      <div class="eyebrow">Where The Increase Goes</div>
+      <h2>Reserves up. Operating down.</h2>
+      <div class="equation">
+        <div class="term">
+          <div class="num pos">+$43,055</div>
+          <div class="label">Reserve transfer</div>
+        </div>
+        <div class="op">+</div>
+        <div class="term">
+          <div class="num neg">−$22,512</div>
+          <div class="label">Operating budget</div>
+        </div>
+        <div class="op">=</div>
+        <div class="term">
+          <div class="num">$20,543</div>
+          <div class="label">Net budget increase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Dues impact -->
+  <section id="dues" data-toc="Dues Impact">
+    <div class="section-inner">
+      <div class="eyebrow">Impact To Owners</div>
+      <h2>Monthly dues increase</h2>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num accent">~$43</div>
+          <div class="label">Average increase per unit, per month</div>
+        </div>
+        <div class="stat">
+          <div class="num">6.1%</div>
+          <div class="label">Applied per owner's ownership %</div>
+        </div>
+      </div>
+      <p class="lede one-line">Individual increases will vary by ownership percentage. Owner-specific amounts to be sent by <strong>[date]</strong>.</p>
+    </div>
+  </section>
+
+  <!-- 7-9. Budget breakdown carousel: comparison / by category / savings -->
+  <section id="breakdown" data-toc="Budget Breakdown">
+    <div class="section-inner">
+      <div class="eyebrow">2026 vs 2027</div>
+      <h2>Budget breakdown</h2>
+    </div>
+
+    <div class="carousel-viewport" id="carouselViewport">
+      <div class="carousel-spacer"></div>
+
+      <!-- Card 1: Budget comparison chart -->
+      <div class="carousel-panel">
+        <h3>Budget comparison</h3>
+        <div class="viz-root" data-palette="#2a78d6,#eb6834">
+          <svg viewBox="0 0 560 400" role="img" aria-labelledby="chartTitle chartDesc" style="display:block; width:100%; max-width:480px; height:auto; margin:0 auto;">
+            <title id="chartTitle">2026 vs 2027 budget, split between Operating and Reserves</title>
+            <desc id="chartDesc">2026 totals $335,076 (Operating $271,131, Reserves $63,945). 2027 totals $355,619 (Operating $248,619, Reserves $107,000).</desc>
+
+            <!-- baseline -->
+            <line x1="60" y1="330" x2="500" y2="330" stroke="#e4e1da" stroke-width="1" />
+
+            <!-- 2026 bar -->
+            <rect x="90" y="101" width="110" height="229" rx="4" ry="4" fill="var(--series-operating)" />
+            <rect x="90" y="45" width="110" height="54" rx="4" ry="4" fill="var(--series-reserves)" />
+            <text x="145" y="220" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">$271,131</text>
+            <text x="145" y="76" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">$63,945</text>
+            <text x="145" y="30" text-anchor="middle" fill="#1c1b1a" font-size="15" font-weight="700">$335,076</text>
+            <text x="145" y="352" text-anchor="middle" fill="#5c5a56" font-size="13">2026</text>
+
+            <!-- 2027 bar -->
+            <rect x="330" y="120" width="110" height="210" rx="4" ry="4" fill="var(--series-operating)" />
+            <rect x="330" y="28" width="110" height="90" rx="4" ry="4" fill="var(--series-reserves)" />
+            <text x="385" y="230" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="600">$248,619</text>
+            <text x="385" y="78" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="600">$107,000</text>
+            <text x="385" y="14" text-anchor="middle" fill="#1c1b1a" font-size="15" font-weight="700">$355,619</text>
+            <text x="385" y="352" text-anchor="middle" fill="#5c5a56" font-size="13">2027</text>
+          </svg>
+          <div class="chart-legend">
+            <span class="key"><span class="swatch" style="background:var(--series-operating)"></span>Operating</span>
+            <span class="key"><span class="swatch" style="background:var(--series-reserves)"></span>Reserves</span>
           </div>
-          <img
-            class="featured-update-image"
-            src="assets/irrigation-priorities.jpeg"
-            alt="Community lawn and landscaped common area at Terraces at Mount Olympus"
-          />
-        </a>
-      </section>
-    </main>
+        </div>
+      </div>
 
-    <footer class="site-footer">
-      <p>Copyright &copy; 2026 HOA Coop. All rights reserved.</p>
-    </footer>
-  </body>
+      <!-- Card 2: By category table -->
+      <div class="carousel-panel carousel-panel--wide">
+        <h3>By category</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>2026</th>
+              <th>2027</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Administrative</td>
+              <td>$91,632</td>
+              <td>$89,919</td>
+              <td class="muted">−$1,713</td>
+            </tr>
+            <tr>
+              <td>Landscape and Snow</td>
+              <td>$96,199</td>
+              <td>$81,300</td>
+              <td class="muted">−$14,899</td>
+            </tr>
+            <tr>
+              <td>Utilities</td>
+              <td>$42,500</td>
+              <td>$46,100</td>
+              <td class="muted">+$3,600</td>
+            </tr>
+            <tr>
+              <td>Building Maintenance</td>
+              <td>$28,175</td>
+              <td>$20,900</td>
+              <td class="muted">−$7,275</td>
+            </tr>
+            <tr>
+              <td>Pool and Spa</td>
+              <td>$12,625</td>
+              <td>$10,400</td>
+              <td class="muted">−$2,225</td>
+            </tr>
+            <tr>
+              <td>Transfer to Reserves</td>
+              <td>$63,945</td>
+              <td>$107,000</td>
+              <td class="pos">+$43,055</td>
+            </tr>
+            <tr class="total">
+              <td>Total Budget</td>
+              <td>$335,076</td>
+              <td>$355,619</td>
+              <td class="pos">+$20,543</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Card 3: Where we're saving -->
+      <div class="carousel-panel">
+        <h3>Savings across the board</h3>
+        <ul class="savings-list">
+          <li><span>Administrative</span><span class="status good"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5v9M8 11.5l-3.5-3.5M8 11.5l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Reduced</span></li>
+          <li><span>Landscaping</span><span class="status good"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5v9M8 11.5l-3.5-3.5M8 11.5l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Reduced</span></li>
+          <li><span>Building Maintenance</span><span class="status good"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5v9M8 11.5l-3.5-3.5M8 11.5l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Reduced</span></li>
+          <li><span>Pool</span><span class="status good"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5v9M8 11.5l-3.5-3.5M8 11.5l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Reduced</span></li>
+          <li><span>Utilities</span><span class="status flat"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.5v9M8 11.5l-3.5-3.5M8 11.5l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Slight increase</span></li>
+        </ul>
+      </div>
+
+      <div class="carousel-spacer"></div>
+    </div>
+
+    <div class="carousel-controls">
+      <button class="carousel-arrow" id="carouselPrev" aria-label="Previous view" type="button">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2.5L4 8l6 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <span class="carousel-count" id="carouselCount">1 / 3</span>
+      <button class="carousel-arrow" id="carouselNext" aria-label="Next view" type="button">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 2.5l6 5.5-6 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- 9. Looking ahead -->
+  <section id="ahead" data-toc="Looking Ahead">
+    <div class="section-inner">
+      <div class="eyebrow">2027 Initiatives</div>
+      <h2>What's next</h2>
+      <ul class="todo-list">
+        <li><span class="box"></span><span class="text">Reserve Study<span class="sub">Renewed in 2027</span></span></li>
+        <li><span class="box"></span><span class="text">Painting project<span class="sub">Saving $90k across 2027–2028</span></span></li>
+        <li><span class="box"></span><span class="text">Concrete repair plan<span class="sub">Multi-year effort</span></span></li>
+        <li><span class="box"></span><span class="text">Landscaping Committee<span class="sub">Restructured around project execution</span></span></li>
+        <li><span class="box"></span><span class="text">Landscaping projects<span class="sub">Recoded as Reserve expenses</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 10. Painting project -->
+  <section class="dark" id="painting" data-toc="Painting Project">
+    <div class="section-inner">
+      <div class="eyebrow">Capital Project</div>
+      <h2>Community painting — Spring 2028</h2>
+
+      <div class="split-bar">
+        <div class="bar">
+          <div class="seg-a" style="width:50%"></div>
+          <div class="seg-b" style="width:50%"></div>
+        </div>
+        <div class="bar-labels">
+          <div>
+            <span class="num" style="color:var(--series-reserves)">$250k</span>
+            Reserves
+          </div>
+          <div style="text-align:right;">
+            <span class="num" style="color:var(--series-operating)">$250k</span>
+            Special Assessment
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-row" style="margin-top:3.5rem;">
+        <div class="stat">
+          <div class="num num-sm">~$500k</div>
+          <div class="label">Total project estimate</div>
+        </div>
+        <div class="stat">
+          <div class="num num-sm">Late 2027</div>
+          <div class="label">Vendor engagement</div>
+        </div>
+        <div class="stat">
+          <div class="num num-sm">Included</div>
+          <div class="label" style="white-space:nowrap;">Exterior lighting, address numbers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Closing -->
+  <section class="closing" id="closing" data-toc="Questions">
+    <img class="cover-logo" src="assets/logo.png" alt="Terraces at Mt. Olympus logo" />
+    <h2>Questions?</h2>
+    <p class="sub">Thank you.</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
