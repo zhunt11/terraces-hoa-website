@@ -99,6 +99,16 @@ p.lede {
 
 section.dark p.lede { color: #c7c4bd; }
 
+p.footnote {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: none;
+  margin: 3rem 0 0 0;
+}
+
+section.dark p.footnote { color: #8c8a85; }
+
 p.lede.one-line {
   max-width: none;
   white-space: nowrap;
